@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <AutoCompleteTextView
+        android:id="@+id/foodNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter food name"
+        android:layout_marginBottom="16dp"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Recipe"
+        android:layout_below="@id/foodNameInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/recipeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recipe Title"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@id/searchButton"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/recipeImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/recipeTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/recipeInstructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recipe instructions will appear here."
+        android:layout_below="@id/recipeImage"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp" />
+</RelativeLayout>
